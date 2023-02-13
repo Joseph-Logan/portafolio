@@ -25,12 +25,13 @@ const { title } = Astro.props
     <title>{title}</title>
   </head>
   <body>
-    <Navbar />
-
-    <div class="flex flex-col xl:flex-row justify-between m-auto xl:gap-x-24 xl:w-[1200px]">
-      <main class='flex-1 relative px-6 mt-8'>
-        <slot />
-      </main>
+    <div class="w-full">
+      <Navbar />
+      <div class="flex flex-row">
+        <main class='flex-1 relative px-6'>
+          <slot />
+        </main>
+      </div>
     </div>
   </body>
 </html>
